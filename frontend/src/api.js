@@ -11,6 +11,7 @@ console.log(`Connecting to API at: ${API_URL}`); // A helpful log to see which U
 
 const API = axios.create({
     baseURL: API_URL,
+    timeout: 30000
 });
 
 export const getIncidents = () => API.get('/incidents/');
