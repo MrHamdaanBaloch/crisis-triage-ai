@@ -15,7 +15,7 @@ from .notifications import send_slack_alert
 models.Base.metadata.create_all(bind=engine)
 app = FastAPI(title="CrisisTriage AI API")
 
-origins = ["http://localhost:5173", "http://127.0.0.1:5173"]
+origins = ["http://localhost:5173", "http://127.0.0.1:5173", "https://crisis-triage-ai.netlify.app" ]
 app.add_middleware(CORSMiddleware, allow_origins=origins, allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 
 VOLUNTEER_TEAMS = {"Team Alpha (Medical)": {}, "Team Bravo (Logistics)": {}, "Team Charlie (S&R)": {}}
