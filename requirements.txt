@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+groq
+python-dotenv
+pandas
+requests
+psycopg2-binary
+discord.py # For Discord Bot

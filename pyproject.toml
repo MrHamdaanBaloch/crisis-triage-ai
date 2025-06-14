@@ -1,0 +1,6 @@
+[project]
+name = "rescue-gent"
+version = "0.1.0"
+
+[tool.setuptools.packages.find]
+where = ["src"]  # Look for packages in the 'src' directory
